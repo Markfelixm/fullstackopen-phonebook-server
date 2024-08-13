@@ -1,0 +1,30 @@
+{
+  "name": "fullstackopen-phonebook-server",
+  "version": "0.0.1",
+  "description": "backend for phonebook app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Markfelixm/fullstackopen-phonebook-server.git"
+  },
+  "keywords": [
+    "phonebook",
+    "server",
+    "fullstackopen"
+  ],
+  "author": "marmulle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Markfelixm/fullstackopen-phonebook-server/issues"
+  },
+  "homepage": "https://github.com/Markfelixm/fullstackopen-phonebook-server#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
