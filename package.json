@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "node index.js",
-	"dev": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/Markfelixm/fullstackopen-phonebook-server#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
