@@ -40,6 +40,7 @@ const App = () => {
 	};
 
 	const updateContact = (newContact) => {
+		return; // exercise 3.9: disable changes to contacts
 		contactServices
 			.update(newContact)
 			.then((updatedContact) => {
@@ -62,6 +63,7 @@ const App = () => {
 
 	const addContact = (event) => {
 		event.preventDefault();
+		return; // exercise 3.9: disable changes to contacts
 
 		const newContact = { name: newName, number: newNumber };
 
@@ -91,6 +93,7 @@ const App = () => {
 	};
 
 	const onDelete = (id) => {
+		return; // exercise 3.9: disable changes to contacts
 		const personToDelete = persons.find((person) => person.id === id).name;
 		if (confirm(`delete ${personToDelete} ?`)) {
 			contactServices
