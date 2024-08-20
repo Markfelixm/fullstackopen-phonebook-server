@@ -89,6 +89,19 @@ app.delete("/api/persons/:id", (request, response, next) => {
 		});
 });
 
+app.put("/api/persons/:id", (request, response, next) => {
+	const person = {
+		name: request.body.name,
+		number: request.body.number,
+	};
+
+	Contact.findByIdAndUpdate(request.params.id, person, { new: true })
+		.then((updatedPerson) => {
+			response.json(updatedPerson);
+		})
+		.catch((error) => next(error));
+});
+
 const errorHandler = (error, request, response, next) => {
 	console.error("server error:", error.message);
 
