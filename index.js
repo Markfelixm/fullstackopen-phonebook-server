@@ -75,12 +75,19 @@ app.post("/api/persons", (request, response) => {
 	person.save().then((savedContact) => response.json(savedContact));
 });
 
-// app.delete("/api/persons/:id", (request, response) => {
-// 	const id = request.params.id;
-// 	persons = persons.filter((person) => person.id !== request.params.id);
-
-// 	response.status(204).end();
-// });
+app.delete("/api/persons/:id", (request, response, next) => {
+	Contact.findByIdAndDelete(request.params.id)
+		.then((deletedContact) => {
+			if (deletedContact) {
+				response.status(200).json(deletedContact);
+			} else {
+				response.status(204).end();
+			}
+		})
+		.catch((error) => {
+			next(error);
+		});
+});
 
 const PORT = process.env.PORT || 3001;
 const server = app.listen(PORT, () => {
