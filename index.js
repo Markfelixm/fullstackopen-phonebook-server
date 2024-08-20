@@ -89,6 +89,18 @@ app.delete("/api/persons/:id", (request, response, next) => {
 		});
 });
 
+const errorHandler = (error, request, response, next) => {
+	console.error("server error:", error.message);
+
+	if (error.name === "CastError") {
+		return response.status(400).send({ error: "malformatted id" });
+	}
+
+	next(error);
+};
+
+app.use(errorHandler);
+
 const PORT = process.env.PORT || 3001;
 const server = app.listen(PORT, () => {
 	console.log(`Server running on port ${PORT}`);
