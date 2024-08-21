@@ -8,6 +8,6 @@
 [/persons](https://fullstackopen-phonebook-t9ev.onrender.com/api/persons)  
 [/persons/2](https://fullstackopen-phonebook-t9ev.onrender.com/api/persons/2)
 
-### exercise 3.20: add frontend; add mongoDB; add validation
+### exercise 3.21: add frontend; add mongoDB; add validation
 
 [index](https://fullstackopen-phonebook-t9ev.onrender.com/)
