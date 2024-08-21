@@ -8,6 +8,6 @@
 [/persons](https://fullstackopen-phonebook-t9ev.onrender.com/api/persons)  
 [/persons/2](https://fullstackopen-phonebook-t9ev.onrender.com/api/persons/2)
 
-### exercise 3.11: add frontend (disabled contact updating)
+### exercise 3.20: add frontend; add mongoDB; add validation
 
-[app at index](https://fullstackopen-phonebook-t9ev.onrender.com/)
+[index](https://fullstackopen-phonebook-t9ev.onrender.com/)
