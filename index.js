@@ -6,8 +6,8 @@ const { Contact, disconnect } = require("./models/contacts");
 
 const app = express();
 
-morgan.token("data", function (req, res) {
-	return req.method == "POST" ? JSON.stringify(req.body) : " ";
+morgan.token("data", function (req) {
+	return req.method === "POST" ? JSON.stringify(req.body) : " ";
 });
 
 app.use(cors());
